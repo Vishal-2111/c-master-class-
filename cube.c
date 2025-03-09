@@ -1,18 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-
-  
+    int num, i;
     printf("Enter an integer: ");
-    scanf("%d", &n);
-
-  
-    printf("The cubes of numbers from 1 to %d are:\n", n);
-    for (int i = 1; i <= n; i++) {
-        printf("Cube of %d = %d\n", i, i * i * i);
+    scanf("%d", &num);
+    printf("Cubes of numbers from 1 to %d:\n", num);
+    for(i = 1; i <= num; i++) {
+        printf("%d^3 = %d\n", i, i * i * i);
     }
-
+    
     return 0;
 }
 
